@@ -1,18 +1,28 @@
 document.getElementById("btn").onclick = function() {
-  let test = document.getElementById("input").value;
+  let getValue = document.getElementById("input").value;
   let result;
 
-  if (test % 3 === 0 && test % 5 === 0 && test != 0) {
+  if (getValue % 3 === 0 && getValue % 5 === 0 && getValue != 0) {
     result = "fizzbuzz!";
-  } else if (test % 5 === 0 && test != 0) {
+  } else if (getValue % 5 === 0 && getValue != 0) {
     result = "Buzz!";
-  } else if (test % 3 === 0 && test != 0) {
+  } else if (getValue % 3 === 0 && getValue != 0) {
     result = "fizz!";
-  } else if (test != 0) {
-    result = test;
-  } else if (test == 0) {
-    result = "invalid input";
-  }
+  }else if (getValue == 0) {
+    result = "input tidak boleh 0";
+  } else if(isNaN(input)){
+    result ="hanya boleh input angka"
+  } else if (getValue != 0 ) {
+    result = getValue, " bukan fizz maupun buzz";
+  } 
 
   alert(result);
 };
+
+
+document.getElementById("input").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("btn").click();
+  }
+});
