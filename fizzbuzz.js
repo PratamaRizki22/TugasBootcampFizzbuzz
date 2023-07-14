@@ -1,5 +1,5 @@
 document.getElementById("btn").onclick = function() {
-  let test = document.getElementById("inpus").value;
+  let test = document.getElementById("input").value;
   let result;
 
   if (test % 3 === 0 && test % 5 === 0 && test != 0) {
