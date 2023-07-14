@@ -1,28 +1,18 @@
-let ul = document.getElementById("tulisan");
-document.getElementById("btn").onclick = function () {
+document.getElementById("btn").onclick = function() {
   let test = document.getElementById("inpus").value;
+  let result;
 
-  if (test % 3 == 0 && test % 5 == 0 && test != 0) {
-    ul.insertAdjacentHTML(
-      "afterbegin",
-      "<li><span>" + "fizzbuzz!" + "</span></li>"
-    );
-  } else if (test % 5 == 0 && test != 0) {
-    ul.insertAdjacentHTML(
-      "afterbegin",
-      "<li><span>" + "Buzz!" + "</span></li>"
-    );
-  } else if (test % 3 == 0 && test != 0) {
-    ul.insertAdjacentHTML(
-      "afterbegin",
-      "<li><span>" + "fizz!" + "</span></li>"
-    );
+  if (test % 3 === 0 && test % 5 === 0 && test != 0) {
+    result = "fizzbuzz!";
+  } else if (test % 5 === 0 && test != 0) {
+    result = "Buzz!";
+  } else if (test % 3 === 0 && test != 0) {
+    result = "fizz!";
   } else if (test != 0) {
-    ul.insertAdjacentHTML("afterbegin", "<li><span>" + test + "</span></li>");
+    result = test;
   } else if (test == 0) {
-    ul.insertAdjacentHTML(
-      "afterbegin",
-      "<li><span>" + "invalid input" + "</span></li>"
-    );
+    result = "invalid input";
   }
+
+  alert(result);
 };

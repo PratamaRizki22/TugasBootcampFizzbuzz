@@ -1,30 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200;1,500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Mengatur tampilan body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-#title{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-
+/* Mengatur tampilan h1 */
+#title {
+  text-align: center;
+  color: #333;
 }
 
-#title-aturan{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/* Mengatur tampilan div all-aturan */
+#all-aturan {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-#aturan{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/* Mengatur tampilan p title-aturan */
+#title-aturan {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Mengatur tampilan div Aturan */
+#Aturan {
+  margin-left: 20px;
+}
+
+/* Mengatur tampilan label */
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Mengatur tampilan input text */
+#inpus {
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Mengatur tampilan button */
+#btn {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mengatur tampilan hr */
+hr {
+  margin-top: 20px;
+}
+
+/* Mengatur tampilan ul tulisan */
+#tulisan {
+  margin-top: 20px;
+  padding-left: 20px;
 }
