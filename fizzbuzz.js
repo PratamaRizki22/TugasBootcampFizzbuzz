@@ -10,7 +10,7 @@ document.getElementById("btn").onclick = function() {
     result = "fizz!";
   }else if (getValue == 0) {
     result = "input tidak boleh 0";
-  } else if(isNaN(input)){
+  } else if(isNaN(getValue)){
     result ="hanya boleh input angka"
   } else if (getValue != 0 ) {
     result = getValue, " bukan fizz maupun buzz";
